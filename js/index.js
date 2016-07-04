@@ -46,8 +46,11 @@ function slideEnd(swiper) {
                 case 5:
                     slide.id = "page4";
                     break;
-                case 7:
+                case 6:
                     slide.id = "page5";
+                    break;
+                case 7:
+                    slide.id = "cover";
                     break;
 
             }
