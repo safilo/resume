@@ -1,15 +1,58 @@
-new Swiper(".swiper-container", {
+// new Swiper(".swiper-container", {
+//     loop: true,
+//     direction: "vertical",
+
+// });
+
+// var obj = [
+// 	swing,
+// 	bounce,
+// 	flip,
+// 	lightSpeedIn,
+// 	rotateIn,
+// 	zoomInLeft,
+// 	rollIn
+
+// ]
+
+var s = new Swiper(".swiper-container", {
     loop: true,
-    direction: "vertical",
+    direction: 'vertical',
+    onSlidePrevEnd: slideEnd,
+    onSlideNextEnd: slideEnd
+
+
 
 });
 
-function fn() {
-    if (!arguments.length) return;
-    var ary = [];
-    for (var i = 0, len = arguments.length; i < len; i++) {
-    	ary.push(arguments[i] * 750 / 640 * 2);
+function slideEnd(swiper) {
+    var n = swiper.activeIndex,
+        slideAry = swiper.slides;
+    [].forEach.call(slideAry, function(slide, index) {
+        if (n === index) {
+            switch (n) {
+                case 1:
+                    slide.id = "cover";
+                    break;
+                case 2:
+                    slide.id = "page1";
+                    break;
+                case 3:
+                    slide.id = "page2";
+                    break;
+                case 4:
+                    slide.id = "page3";
+                    break;
+                case 5:
+                    slide.id = "page4";
+                    break;
+                case 7:
+                    slide.id = "page5";
+                    break;
 
-    }
-    return ary;
+            }
+            return;
+        }
+        slide.id = null;
+    });
 }
