@@ -155,23 +155,23 @@ body {
 
 @keyframes rotate360 {
     from {
-        -webkit-transform: rotate3d(0, 0, 1, -360deg);
-        transform: rotate3d(0, 0, 1, -360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
     to {
-        -webkit-transform: rotate3d(0, 0, 1, 360deg);
-        transform: rotate3d(0, 0, 1, 360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 @-webkit-keyframes rotate360 {
     from {
-        -webkit-transform: rotate3d(0, 0, 1, -360deg);
-        transform: rotate3d(0, 0, 1, -360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
     to {
-        -webkit-transform: rotate3d(0, 0, 1, 360deg);
-        transform: rotate3d(0, 0, 1, 360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
