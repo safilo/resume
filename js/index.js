@@ -1,20 +1,3 @@
-// new Swiper(".swiper-container", {
-//     loop: true,
-//     direction: "vertical",
-
-// });
-
-// var obj = [
-// 	swing,
-// 	bounce,
-// 	flip,
-// 	lightSpeedIn,
-// 	rotateIn,
-// 	zoomInLeft,
-// 	rollIn
-
-// ]
-
 var s = new Swiper(".swiper-container", {
     loop: true,
     direction: 'vertical',

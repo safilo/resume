@@ -338,8 +338,8 @@ body {
 #cover ul > li:nth-child(2) {
     -webkit-transform-origin: top center;
     transform-origin: top center;
-    -webkit-animation: bounceInUp 1s .3s both;
-    animation: bounceInUp 1s .3s both;
+    -webkit-animation: bounceInUp 1s .2s both;
+    animation: bounceInUp 1s .2s both;
 }
 
 #cover ul > li:nth-child(3) {
@@ -358,28 +358,28 @@ body {
 }
 
 #page1 ul > li:nth-child(2) {
-    -webkit-animation: bounceInLeft 1s .2s both;
-    animation: bounceInLeft 1s .2s both;
+    -webkit-animation: bounceInLeft 1s .3s both;
+    animation: bounceInLeft 1s .3s both;
 }
 
 #page1 ul > li:nth-child(3) {
-    -webkit-animation: bounceInLeft 1s .4s both;
-    animation: bounceInLeft 1s .4s both;
-}
-
-#page1 ul > li:nth-child(4) {
     -webkit-animation: bounceInLeft 1s .6s both;
     animation: bounceInLeft 1s .6s both;
 }
 
+#page1 ul > li:nth-child(4) {
+    -webkit-animation: bounceInLeft 1s .9s both;
+    animation: bounceInLeft 1s .9s both;
+}
+
 #page1 ul > li:nth-child(5) {
-    -webkit-animation: bounceInLeft 1s .8s both;
-    animation: bounceInLeft 1s .8s both;
+    -webkit-animation: bounceInLeft 1s 1.2s both;
+    animation: bounceInLeft 1s 1.2s both;
 }
 
 #page1 ul > li:nth-child(6) {
-    -webkit-animation: bounceInLeft 1s 1s both;
-    animation: bounceInLeft 1s 1s both;
+    -webkit-animation: bounceInLeft 1s 1.5s both;
+    animation: bounceInLeft 1s 1.5s both;
 }
 
 #page1 .title,
@@ -415,8 +415,8 @@ body {
 #page2 .sNode img,
 #page2 .sGulp img,
 #page2 .sjQuery img {
-    -webkit-animation: rotate360 8s linear 1s 3 both;
-    animation: rotate360 8s linear 1s 3 both;
+    -webkit-animation: rotate360 15s linear 1s 3 both;
+    animation: rotate360 15s linear 1s 3 both;
 }
 
 #page2 .sJs {
@@ -528,16 +528,16 @@ body {
 
 @-webkit-keyframes rotateIn {
     from {
-        -webkit-transform-origin: center;
-        transform-origin: center;
-        -webkit-transform: rotate3d(0, 0, 1, -200deg) translate(-.49rem, 0);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
         transform: rotate3d(0, 0, 1, -200deg);
         opacity: 0;
     }
     to {
-        -webkit-transform-origin: center;
-        transform-origin: center;
-        -webkit-transform: translate(1rem, 1rem);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: none;
         transform: none;
         opacity: 1;
     }
