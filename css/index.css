@@ -353,33 +353,33 @@ body {
 }
 
 #page1 ul > li:nth-child(1) {
-    -webkit-animation: bounceInLeft 1s 0s both;
-    animation: bounceInLeft 1s 0s both;
+    -webkit-animation: bounceInLeft .8s 0s both;
+    animation: bounceInLeft .8s 0s both;
 }
 
 #page1 ul > li:nth-child(2) {
-    -webkit-animation: bounceInLeft 1s .4s both;
-    animation: bounceInLeft 1s .4s both;
+    -webkit-animation: bounceInLeft .8s .4s both;
+    animation: bounceInLeft .8s .4s both;
 }
 
 #page1 ul > li:nth-child(3) {
-    -webkit-animation: bounceInLeft 1s .8s both;
-    animation: bounceInLeft 1s .8s both;
+    -webkit-animation: bounceInLeft .8s .8s both;
+    animation: bounceInLeft .8s .8s both;
 }
 
 #page1 ul > li:nth-child(4) {
-    -webkit-animation: bounceInLeft 1s 1.2s both;
-    animation: bounceInLeft 1s 1.2s both;
+    -webkit-animation: bounceInLeft .8s 1.2s both;
+    animation: bounceInLeft .8s 1.2s both;
 }
 
 #page1 ul > li:nth-child(5) {
-    -webkit-animation: bounceInLeft 1s 1.4s both;
-    animation: bounceInLeft 1s 1.4s both;
+    -webkit-animation: bounceInLeft .8s 1.6s both;
+    animation: bounceInLeft .8s 1.6s both;
 }
 
 #page1 ul > li:nth-child(6) {
-    -webkit-animation: bounceInLeft 1s 1.8s both;
-    animation: bounceInLeft 1s 1.8s both;
+    -webkit-animation: bounceInLeft .8s 2s both;
+    animation: bounceInLeft .8s 2s both;
 }
 
 #page1 .title,
@@ -1018,5 +1018,32 @@ body {
         transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
         -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
         animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+@-webkit-keyframes rollIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes rollIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
 }
