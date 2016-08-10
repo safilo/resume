@@ -14,6 +14,9 @@ function slideEnd(swiper) {
     [].forEach.call(slideAry, function(slide, index) {
         if (n === index) {
             switch (n) {
+                case 0:
+                    slide.id = "page7";
+                    break;
                 case 1:
                     slide.id = "cover";
                     break;
@@ -33,6 +36,12 @@ function slideEnd(swiper) {
                     slide.id = "page5";
                     break;
                 case 7:
+                    slide.id = "page6";
+                    break;
+                case 8:
+                    slide.id = "page7";
+                    break;
+                case 9:
                     slide.id = "cover";
                     break;
 

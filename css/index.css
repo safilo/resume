@@ -391,7 +391,15 @@ body {
 #page4 .title,
 #page4 .index,
 #page5 .title,
-#page5 .index {
+#page5 .index, 
+#page6 .title,
+#page6 .index,
+#page7 .title,
+#page7 .index,
+#page8 .title,
+#page8 .index,
+#page9 .title,
+#page9 .index  {
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
     -webkit-animation: flipInX 1s 0s both;
